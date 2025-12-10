@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>StudyHub — Learning Resources</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-sans bg-slate-50 leading-normal text-gray-900 p-6 flex justify-center items-start">
+    <div class="max-w-[1100px] w-full" role="main">
+        <!-- Header -->
+        <header class="gap-4 flex justify-between mb-6 md:flex-row flex-col md:items-left" aria-label="Main navigation">
+            <div class="gap-3 flex items-center">
+                <div class="rounded-lg bg-gradient-to-tr from-indigo-600 to-cyan-500 shadow-lg w-12 h-12 flex items-center justify-center text-white font-bold">SH</div>
+                <div>
+                    <div class="font-extrabold">StudyHub</div>
+                    <div class="text-slate-600 text-xs">Learn together • Build faster</div>
+                </div>
+            </div>
+
+            <nav class="gap-0.5 lg:gap-4 md:gap-3 flex items-center text-xs lg:text-base md:text-sm" aria-label="Primary">
+                <a href="#courses" class="text-slate-600 py-2 px-3 no-underline font-semibold rounded-lg">Courses</a>
+                <a href="#resources" class="text-slate-600 py-2 px-3 no-underline font-semibold rounded-lg">Resources</a>
+                <a href="#community" class="text-slate-600 py-2 px-3 no-underline font-semibold rounded-lg">Community</a>
+                <a href="#signup" class="bg-blue-600 text-white py-2 px-3 no-underline font-semibold rounded-lg">Get Started</a>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="grid grid-cols-1 lg:grid-cols-14 gap-6 items-center mb-6" aria-labelledby="hero-heading">
+            <div class="col-span-9 bg-gradient-to-b from-white/60 to-white/90 rounded-xl shadow-lg p-6">
+                <h1 class="font-bold text-2xl mb-1 lg:text-3xl lg:mb-3 md:text-2xl md:mb-2 ">Your weekly learning playground</h1>
+                <p class="text-slate-600 mb-4">Curated bite-sized courses, hands-on projects, and community challenges to keep you
+                    learning consistently.</p>
+                <div class="flex gap-3">
+                    <button class="border-0 py-3 px-4 rounded-lg cursor-pointer font-bold bg-blue-600 text-white text-sm">Explore Courses</button>
+                    <button class="border-0 py-3 px-4 rounded-lg cursor-pointer font-bold border-2 border-blue-50 text-blue-600 bg-transparent text-sm">Join Community</button>
+                </div>
+
+                <hr class="my-4 border-t border-gray-200">
+
+                <div class="flex gap-3 flex-wrap">
+                    <div class="min-w-[160px]">
+                        <div class="text-slate-600 text-xs">Next live workshop</div>
+                        <div class="font-bold">Stateful APIs • Dec 15</div>
+                    </div>
+                    <div class="min-w-[160px]">
+                        <div class="text-slate-600 text-xs">Active learners</div>
+                        <div class="font-bold">3,412</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup card -->
+            <aside class="col-span-9 lg:col-span-5 md:col-span-9 bg-gradient-to-b from-white/60 to-white/90 rounded-xl shadow-lg p-6" aria-labelledby="signup-title">
+                <h2 class="text-[18px] font-bold mb-2" id="signup-title">Start your free plan</h2>
+                <p class="text-slate-600 text-base mb-[12px]">No credit card — upgrade anytime.</p>
+                <form id="signup" class="flex flex-col gap-[10px]">
+                    <input type="text" placeholder="Full name" class="text-sm p-[10px] rounded-lg border border-gray-200"/>
+                    <input type="email" placeholder="Email address" class="text-sm p-[10px] rounded-lg border border-gray-200"/>
+                    <button type="submit" class="border-0 py-3 px-4 rounded-lg cursor-pointer font-bold bg-blue-600 text-white text-sm">Create account</button>
+                </form>
+            </aside>
+        </section>
+
+        <!-- Features -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6" aria-label="features">
+            <div class="bg-white rounded-xl shadow-lg gap-3 p-4 flex items-start">
+                <div class="w-[46px] h-[46px] rounded-xl bg-[#eef2ff] flex items-center justify-center font-bold">
+                    PG</div>
+                <div>
+                    <h3 class="mb-1 text-base">Project Guided</h3>
+                    <p class="text-slate-600 text-sm">Short projects with guided steps and solution walkthroughs.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg gap-3 p-4 flex items-start">
+                <div class="w-[46px] h-[46px] rounded-xl bg-[#fff7ed] flex items-center justify-center font-bold">
+                    LR</div>
+                <div>
+                    <h3 class="mb-1 text-base">Learning Roadmaps</h3>
+                    <p class="text-slate-600 text-sm">Structured paths from beginner to job-ready levels.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg gap-3 p-4 flex items-start">
+                <div class="w-[46px] h-[46px] rounded-xl bg-[#ecfccb] flex items-center justify-center font-bold">
+                    CM</div>
+                <div>
+                    <h3 class="mb-1 text-base">Community Mentors</h3>
+                    <p class="text-slate-600 text-sm">Mentor hours and peer feedback to accelerate growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources grid -->
+        <section id="resources" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-6" aria-label="resources">
+            <article class="bg-white rounded-xl gap-2 p-3 flex flex-col">
+                <img class="w-full h-28 object-cover rounded-lg" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd"
+                    alt="notebook and coffee">
+                <h4 class="text-sm font-bold">How to build a daily coding habit</h4>
+                <p class="text-slate-600 text-xs">10 min read • Beginner</p>
+            </article>
+
+            <article class="bg-white rounded-xl gap-2 p-3 flex flex-col">
+                <img class="w-full h-28 object-cover rounded-lg" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh"
+                    alt="laptop">
+                <h4 class="text-sm font-bold">Deploy your first Node.js app</h4>
+                <p class="text-slate-600 text-xs">30 min guide • Intermediate</p>
+            </article>
+
+            <article class="bg-white rounded-xl gap-2 p-3 flex flex-col">
+                <img class="w-full h-28 object-cover rounded-lg" src="https://images.unsplash.com/photo-1515165562835-c6c8f2d0d6f9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ijkl"
+                    alt="whiteboard diagram">
+                <h4 class="text-sm font-bold">System design crash course</h4>
+                <p class="text-slate-600 text-xs">45 min • Intermediate</p>
+            </article>
+
+            <article class="bg-white rounded-xl gap-2 p-3 flex flex-col">
+                <img class="w-full h-28 object-cover rounded-lg" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=mnop"
+                    alt="team">
+                <h4 class="text-sm font-bold">How to work in open source</h4>
+                <p class="text-slate-600 text-xs">25 min • All levels</p>
+            </article>
+        </section>
+
+        <!-- Two-column layout with sidebar -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6" aria-label="dashboard">
+            <div class="col-span-2">
+                <div class="card mb-[14px]">
+                    <h3 class="font-bold text-lg mb-[10px]">Your active courses</h3>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex justify-between items-center gap-3">
+                            <div>
+                                <div class="font-bold">Fullstack Basics</div>
+                                <div class="text-xs text-slate-600">Module 3 of 8</div>
+                            </div>
+                            <div class="min-w-[120px]">
+                                <div class="text-xs text-slate-600">Progress</div>
+                                <div class="h-[8px] bg-[#eef2ff] rounded-[8px] mt-1.5 overflow-hidden">
+                                    <div class="w-[78%] h-full bg-gradient-to-r from-violet-600 to-cyan-500">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center gap-[12px]">
+                            <div>
+                                <div class="font-bold">Intro to Databases</div>
+                                <div class="text-xs text-slate-600">Module 1 of 5</div>
+                            </div>
+                            <div class="min-w-[120px]">
+                                <div class="text-xs text-slate-600">Progress</div>
+                                <div class="h-[8px] bg-[#eef2ff] rounded-lg mt-1.5 overflow-hidden">
+                                    <div class="w-[36%] h-full bg-gradient-to-r from-green-400 to-cyan-500">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <h3 class="font-bold text-lg mb-[10px]">Community Challenges</h3>
+                    <ul class="list-none grid gap-[10px]">
+                        <li class="bg-white p-[10px] rounded-[8px] flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">30-day JS challenge</div>
+                                <div class="text-xs text-slate-600">Day 12 • 120 people active</div>
+                            </div>
+                            <button class="text-sm border-0 py-3 px-4 rounded-lg cursor-pointer font-bold border-2 border-blue-50 text-blue-600 bg-transparent">Join</button>
+                        </li>
+                        <li class="bg-white p-[10px] rounded-[8px] flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">Weekly Algo Sprint</div>
+                                <div class="text-xs text-slate-600">Sat • 10:00 AM</div>
+                            </div>
+                            <button class="text-sm border-0 py-3 px-4 rounded-lg cursor-pointer font-bold border-2 border-blue-50 text-blue-600 bg-transparent">RSVP</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <aside class="sidebar lg:col-span-1 md:col-span-2 bg-white rounded-xl gap-3 p-4 h-full flex flex-col" aria-labelledby="progress-title">
+                <h4 class="font-bold text-base mb-[6px]" id="progress-title">Learning streak</h4>
+                <div class="progress gap-3 flex justify-between items-center">
+                    <div>
+                        <div class="text-sm">This week</div>
+                        <div class="font-bold">4 days</div>
+                    </div>
+                    <div class="bar flex-1 h-2 bg-indigo-100 rounded-lg overflow-hidden" aria-hidden="true"><span class="w-7/12 bg-gradient-to-r from-violet-600 to-cyan-500 block h-full"></span></div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-[6px]">Recommended topic</h4>
+                    <div class="font-bold">APIs with Express</div>
+                    <p class="text-xs text-slate-600 mt-[8px]">A short path to build and deploy a REST API in under an
+                        hour.</p>
+                </div>
+
+                <div style="margin-top:auto;">
+                    <h4 class="font-bold mb-[8px]">Account</h4>
+                    <div class="text-xs text-slate-600">Email: student@example.com</div>
+                    <button class="mt-[10px] border-0 py-3 px-4 rounded-lg cursor-pointer font-bold border-2 border-blue-50 text-blue-600 bg-transparent">Manage plan</button>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Footer -->
+        <footer class="grid grid-cols-1 md:grid-cols-2 items-start gap-4 mt-4">
+            <div>
+                <div class="font-extrabold">StudyHub</div>
+                <div class="text-xs text-slate-600">Learn together • Build faster</div>
+            </div>
+            <div class="flex gap-[12px] flex-wrap justify-end">
+                <a class="text-xs text-slate-600" href="#">Terms</a>
+                <a class="text-xs text-slate-600" href="#">Privacy</a>
+                <a class="text-xs text-slate-600" href="#">Support</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
